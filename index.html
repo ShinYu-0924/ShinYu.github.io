@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="utf-8">
@@ -24,9 +23,20 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
-
-</head>
-
+    
+    
+<link rel=stylesheet type="text/css" href="css/timeline.css">
+<link rel=stylesheet type="text/css" href="css/about.css">
+<link rel=stylesheet type="text/css" href="css/card-deck.css">     
+ 
+    <!--test-->
+ <link rel=stylesheet type="text/css" href="css/masonry.css">     
+    
+ <link href="https://www.jqueryscript.net/demo/Responsive-Touch-enabled-jQuery-Image-Lightbox-Plugin/dist/simple-lightbox.min.css&#39; rel='stylesheet" type="text/css">
+    
+    
+</head>   
+    
 <body id="page-top">
 
   <!-- Navigation -->
@@ -42,13 +52,10 @@
             <a class="nav-link js-scroll-trigger" href="#about">關於我</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">工作能力</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">作品集</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">聯絡我</a>
+            <a class="nav-link js-scroll-trigger" href="#contacta">聯絡我</a>
           </li>
         </ul>
       </div>
@@ -60,8 +67,8 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center text-center">
         <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">Never put off what you can do today until tomorrow.</h1>
-          <hr class="divider my-4">
+          <h1 class="text-transform:capitalize font-weight-bold">Shin Yu 's Portfolio </h1>  
+          <hr class="divider">
         </div>
         <div class="col-lg-8 align-self-baseline">
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">關於我</a>
@@ -71,25 +78,107 @@
   </header>
 
   <!-- About Section -->
-  <section class="page-section bg-primary" id="about">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h2 class="text-white mt-0">ABOUT ME 關於我</h2>
-          <hr class="divider light my-4">
-          <p class="text-white mb-4">我是杜欣育，擅長網頁設計、平面設計、影像處理與影音剪輯</p>
-          <p class="text-white mb-4">如果您也喜歡我的設計作品/設計風格， 歡迎來信合作。</p>
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#contact">聯絡我</a>
-        </div>
-      </div>
+<section class="section about-section gray-bg" id="about">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6">
+                        <div class="about-text go-to">
+                            <h3 class="white-color">About Shin Yu</h3>
+                            <p>嗨，我是欣育，擅長專案控管與執行，並熟悉網頁設計、平面設計與影音剪輯等軟體，如果您也喜歡我的設計作品/設計風格， 歡迎來信合作。</p>
+                            <div class="row about-list">
+                                <div class="col-md-6">
+                                     <div class="media">
+                                      <label>E-mail</label>
+                                      <p>dushinyu@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="media">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-avatar">
+                         <img class="img-fluid" src="img/me.png" alt="">
+                        </div>
+                    </div>
+                </div>
     </div>
-  </section>
+    <div class="container py-5">
+        
+  <!-- tab Section-->
+  <div class="p-5 bg-white rounded shadow mb-5">
+    <!-- Rounded tabs -->
+    <ul id="tab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+      <li class="nav-item flex-sm-fill">
+        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">學歷</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">經歷</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">能力</a>
+      </li>
+    </ul>
+      
+     <!--tab Section 學歷-->
+    <div id="myTabContent" class="tab-content">
+      <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+        <div class="col-md-12">
+			<ul class="timeline">
+				<li>
+					<h5>淡江大學教育科技所碩士</h5>
+                    <p>2018.06-2019.06</p>
+                </li>
+                <li>
+					<h5>淡江大學教育科技系學士</h5>
+                    <p>2014.06-2018.06</p>
+                </li>
+            </ul>
+          </div>
+        </div>
+        
+        <!--tab Section 經歷-->
+<div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="timeline">
+				<li>
+					<h5><b>專案經理</b></h5>
+                    <h6>2020.07-2021.08</h6>
+                    <ul>
+                        <li>參與標案投標，擬訂專案執行內容與範疇</li>
+                        <li>撰寫核銷計畫書，並分析專案執行成果數據</li>
+                        <li>專案監控與查核使其符合時間、品質、成本，並改善</li>
+                        <li>專案成員工作指派與管理</li>
+                        <li>不定期與專案多個窗口往來聯繫，協助窗口解決問題</li>
+                    </ul>
+                </li>
+                <li>
+                    <h5><b>遊戲企劃專員</b></h5>
+                    <h6>2020.01-2020.04</h6>
+                    <ul>
+                        <li>遊戲包裝的發想及企劃撰寫</li>
+                        <li>與團隊溝通協調，需跨部門與美術、程式等人員合作</li>
+                        <li>撰寫核銷計畫書，並分析專案執行成果數據</li>
+                        <li>了解遊戲及商業邏輯</li>
+                        <li>負責QA及尋找Bug、漏洞、錯誤</li>
+                    </ul>
+                </li>
+			</ul>
+		</div>
+</div>
+        </div>
 
-  <!-- Services Section -->
-  <section class="page-section" id="services" style="background-color:rgba(0, 0, 0, 0.03)">
-    <div class="container">
-      <h2 class="text-center mt-0">SKILLS 工作能力</h2>
-      <hr class="divider my-4">
+
+        
+    
+        <!--tab Section 能力-->
+      <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">       
+          <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-5">
@@ -135,18 +224,23 @@
         </div>
       </div>
     </div>
-  </section>
+        </div>
+      </div>
+        </div>
+    </div>
+    </section>
+    
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section--
   <section id="portfolio">
       <h2 class="text-center mt-5">PORTFOLIO 作品集</h2>
       <hr class="divider my-4">
+<!--Portfolio poster--
     <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
-          <h4 style="padding:0% 3%">3D建模</h4>
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+      <div class="row no-gutters" style="padding:10px">
+        <div class="col-sm-3" style="padding:10px">
+          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg"  alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 3Ds Max
@@ -157,9 +251,8 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-          <h4 style="padding:0% 3%">3D建模</h4>
-          <a class="portfolio-box" href="img/portfolio/fullsize/6.JPG">
+        <div class="col-sm-3" style="padding:10px">
+          <a class="portfolio-box" href="img/portfolio/fullsize/6.JPG" >
             <img class="img-fluid" src="img/portfolio/thumbnails/6.JPG" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
@@ -171,83 +264,106 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
-        <h4 style="padding:0% 3%">影像處理</h4>
-          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                影像處理
-              </div>
-              <div class="project-name">
-                色彩校正
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <h4 style="padding:0% 3%">數位教材</h4>
-        <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                華語教材
-              </div>
-              <div class="project-name">
-                非華不可
-              </div>
-            </div>
-          </a>
-         <div class="btn btn-primary mt-2 mb-2" onClick="javascript:window.open('https://www.youtube.com/watch?v=beJ3UzTojJE&list=PLx-3nrwUv4ML4wFg255K1cEr2JVxR1ZrM&index=3','_blank')">link
-        </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-          <h4 style="padding:0% 3%">數位教材</h4>
-        <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                淡江畢業專題
-              </div>
-              <div class="project-name">
-                機械工廠
-              </div>
-            </div>
-          </a>
-         <div class="btn btn-primary mt-2 mb-2" onClick="javascript:window.open('https://www.youtube.com/watch?v=zgTFLT4-hOM&list=PLx-3nrwUv4ML4wFg255K1cEr2JVxR1ZrM&index=1','_blank')">link
-        </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-          <h4 style="padding:0% 3%">影音編輯</h4>
-        <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="project-category text-white-50">
-                影音編輯
-              </div>
-              <div class="project-name">
-                不只是破銅爛鐵
-              </div>
-            </div>
-          </a>
-         <div class="btn btn-primary mt-2 mb-2" onClick="javascript:window.open('https://www.youtube.com/watch?v=qQfogrBcG4Q&list=PLx-3nrwUv4ML4wFg255K1cEr2JVxR1ZrM&index=2','_blank')">link
-        </div>
-          </div>
-      </div>
-    </div>
   </section>   
 
+<!--test-->  
+<section id="portfolio">
+      <h2 class="text-center mt-5">PORTFOLIO 作品集</h2>
+      <hr class="divider my-4">
+<!--Portfolio poster-->
+    <div class="container-fluid p-0">
+      <div class="row no-gutters" style="padding:10px">
+          <div class="container" style="padding:10px">
+              <div class="row masonry-grid">
+    <div class="col-md-3 masonry-column">
+    <div>
+     <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg"  alt="">
+          </a>
+    </div>
+      <div>
+     <a class="portfolio-box" href="img/portfolio/fullsize/12.png" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/12.png"  alt="">
+          </a>
+    </div>
+      <div>
+     <a class="portfolio-box" href="img/portfolio/fullsize/13.png" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/13.png"  alt="">
+          </a>
+    </div>
+  </div>
+  <div class="col-md-3 masonry-column">
+             <div class="card">
+    <img class="card-img-top" src="img/portfolio/thumbnails/3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">影音剪輯/不只是破銅爛鐵</h5>
+      <p class="card-text">我們平時在街頭看到很多藝人，想藉此機會記錄他們背後的故事，想藉由八奇先生追求夢想的故事，來激勵對未來迷惘的的年輕人，能勇於完成自己的夢想。</p>
+      <div class="btn btn-primary mt-2 mb-2" onClick="javascript:window.open('https://www.youtube.com/watch?v=qQfogrBcG4Q&list=PLx-3nrwUv4ML4wFg255K1cEr2JVxR1ZrM&index=2','_blank')">link
+        </div>
+    </div>
+  </div>
+      <div>
+     <a class="portfolio-box" href="img/portfolio/fullsize/10.png" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/10.png"  alt="">
+          </a>
+    </div>
+      <div>
+     <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg"  alt="">
+          </a>
+    </div>
+  </div>
+  <div class="col-md-3 masonry-column">
+    <div>
+    <a class="portfolio-box" href="img/portfolio/fullsize/6.JPG" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/6.JPG"  alt="">
+          </a>
+    </div>
+      <div>
+     <a class="portfolio-box" href="img/portfolio/fullsize/11.png" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/11.png"  alt="">
+          </a>
+    </div>
+  </div>
+    <div class="col-md-3 masonry-column">
+      <div class="card">
+    <img class="card-img-top" src="img/portfolio/thumbnails/4.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">數位教材/機器工廠</h5>
+      <p class="card-text">專題與瑞芳高級工業職業學校合作，針對高職二年級學生，，製作一套數位教材，整合統計相關數學知識，讓學生進入遊戲情境，提升學習動機，練習統計相關考題。</p>
+      <div class="btn btn-primary mt-2 mb-2" onClick="javascript:window.open('https://www.youtube.com/watch?v=zgTFLT4-hOM&list=PLx-3nrwUv4ML4wFg255K1cEr2JVxR1ZrM&index=1','_blank')">link
+        </div>
+    </div>
+  </div>
+    <div>
+    <a class="portfolio-box" href="img/portfolio/fullsize/9.png" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/9.png"  alt="">
+          </a>
+    </div>
+    <div>
+    <a class="portfolio-box" href="img/portfolio/fullsize/8.png" >
+            <img class="img-fluid" src="img/portfolio/thumbnails/8.png"  alt="">
+          </a>
+    </div>
+    <div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+</section>
     
+
+  
   <!-- Footer -->
-  <footer class="bg-light py-5 mt-5" id="contact">
+  <footer class="bg-light py-5 mt-5" id="contacta">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">CONTACT ME 聯絡我</h2>
           <hr class="divider my-4">
           <p class="text-muted mb-2">E-mail : dushinyu@gmail.com</p>
-          <p class="text-muted mb-2">Phone Number : 0929-372-195</p>
-          <p class="text-muted mb-2">Address : 基隆市,台灣</p>
         </div>
       </div>
     </div>

@@ -1136,6 +1136,7 @@ pre code {
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
   }
+    }
   .col-lg-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%;
@@ -6772,6 +6773,7 @@ button.bg-dark:focus {
 
 .align-self-end {
   align-self: flex-end !important;
+    color:#F2634A;
 }
 
 .align-self-center {
@@ -9567,7 +9569,6 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
 }
 
 hr.light {
@@ -9661,16 +9662,17 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: contain;
 }
 
 header.masthead h1 {
   font-size: 2.25rem;
+    color:#F2634A;
 }
+
 
 @media (min-width: 992px) {
   header.masthead {
@@ -9684,12 +9686,14 @@ header.masthead h1 {
   }
   header.masthead h1 {
     font-size: 3rem;
+      color:#F2634A;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 3.5rem;
+    color:#F2634A;
   }
 }
 
