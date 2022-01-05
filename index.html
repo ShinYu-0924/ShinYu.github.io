@@ -30,10 +30,13 @@
   
   <link href='https://www.jqueryscript.net/demo/Responsive-Touch-enabled-jQuery-Image-Lightbox-Plugin/dist/simple-lightbox.min.css' rel='stylesheet' type='text/css'>
  
-  <!--test justifiedGallery-->
+  <!--justifiedGallery-->
   <link href="justifiedGallery/dist/css/justifiedGallery.css" rel="stylesheet">
   <link href="justifiedGallery/dist/css/justifiedGallery.min.css" rel="stylesheet">
   <link rel="stylesheet" href="http://miromannino.github.io/Justified-Gallery/libs/jquery-colorbox/example3/colorbox.css" type="text/css" media="screen">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.css" />
+ 
 
  
 
@@ -285,8 +288,6 @@
 
   <!-- ======= Portfolio design Section ======= -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="assets/js/filter-tags.js"></script>
-
 
   <section id="portfolio" class="portfolio">
     <div class="container">
@@ -314,14 +315,15 @@
         </div>
       </div>
 
-      <div id="colorboxExample">
-        <a href="assets/img/portfolio/fullsize/2022tiger-1.png">
+      <div class="gallery a">
+      <div id="basicExample2">
+        <a href="assets/img/portfolio/fullsize/2022tiger-1.png" >
             <img alt="" src="assets/img/portfolio/thumbnails/2022tiger-1.png"/>
         </a>
         <a href="assets/img/portfolio/fullsize/2022tiger-2.png">
           <img alt="" src="assets/img/portfolio/thumbnails/2022tiger-2.png" />
         </a>
-        <a href="assets/img/portfolio/fullsize/hot-pot.png" >
+        <a href="assets/img/portfolio/fullsize/hot-pot.png">
           <img alt="" src="assets/img/portfolio/thumbnails/hot-pot.png" />
         </a>
         <a href="assets/img/portfolio/fullsize/butterfly.png" >
@@ -333,43 +335,42 @@
         <a href="assets/img/portfolio/fullsize/coconut.png">
           <img alt="" src="assets/img/portfolio/thumbnails/onion.png" />
         </a>
-        <a href="assets/img/portfolio/fullsize/red-mountain.png" >
-          <img alt="" src="assets/img/portfolio/thumbnails/red-mountain.png" />
+        <a href="assets/img/portfolio/fullsize/red-mountain.png">
+          <img alt="" src="assets/img/portfolio/thumbnails/red-mountain.png"/>
         </a>
         <a href="assets/img/portfolio/fullsize/coconut.png" >
           <img alt="" src="assets/img/portfolio/thumbnails/coconut.png" />
         </a>
-        <a href="assets/img/portfolio/fullsize/new-epoch.png" >
+        <a href="assets/img/portfolio/fullsize/new-epoch.png">
           <img alt="" src="assets/img/portfolio/thumbnails/new-epoch.png" />
         </a>
-        <a href="assets/img/portfolio/fullsize/bathroom.JPG" >
+        <a href="assets/img/portfolio/fullsize/bathroom.JPG">
           <img alt="" src="assets/img/portfolio/thumbnails/bathroom.JPG" />
         </a>
-        <a href="assets/img/portfolio/fullsize/room.jpg" >
+        <a href="assets/img/portfolio/fullsize/room.jpg">
           <img alt="" src="assets/img/portfolio/thumbnails/room.jpg" />
         </a>
     </div>
+    </div>
 
-    <script src="http://miromannino.github.io/Justified-Gallery/libs/jquery-colorbox/jquery.colorbox-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.esm.js"></script>
     <script src="justifiedGallery/dist/js/jquery.justifiedGallery.js"></script>
     <script src="justifiedGallery/dist/js/jquery.justifiedGallery.min.js"></script>
-    
+
     <script>
-$('#colorboxExample').justifiedGallery({
-    lastRow : 'justify', 
-    rowHeight : 200, 
-    rel : 'gallery1', //replace with 'gallery1' the rel attribute of each link
-    margins : 10
-}).on('jg.complete', function () {
-    $(this).find('a').colorbox({
-        maxWidth : '80%',
-        maxHeight : '80%',
-        opacity : 0.8,
-        transition : 'elastic',
-        current : ''
-    });
-});
+ (function() {
+        var $gallery = new SimpleLightbox('.gallery a', {});
+    })();
     </script>
+
+<script>
+ $('#basicExample2').justifiedGallery({
+    rowHeight : 200,
+    lastRow : 'justify',
+    margins : 3
+});
+      </script>
     <!-- =======  End Portfolio design Section  ======= -->
 
 <br><br><br>
